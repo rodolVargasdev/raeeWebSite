@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Residuos - Animacion</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Sen&amp;display=swap'>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div id="main">
+    <div id="info" style="display: none;">
+      <h1 class="letra-b">
+        Manejo de Residuos de aparatos
+        eléctricos y electrónicos.
+        <ul style="font-size: 16px;">
+          Integrantes
+          <li>José Rodolfo Vargas Blanco #VB100222</li>
+          <li>Fernando Gabriel Murcia Salazar #MS100922</li>
+          <li>Rodrigo Manuel Reyes Escobar #RE100320</li>
+          <li>Walter Gabriel Hernandez Hernandez #HH100122</li>
+          <li>Bryan Alberto Flores Rosales #FR101022</li>
+          <li>José Rodolfo Vargas Blanco #VB100222</li>
+        </ul>
+      </h1>
+      <br>
+      <div class="sub-letra">
+        <div class="contenido">
+          <div class="content__container">
+
+            <ul class="content__container__list">
+              <li class="content__container__list__item">Desarrollado por Grupo 11</li>
+              <li class="content__container__list__item">Universidad Francisco Gavidia</li>
+              <li class="content__container__list__item">Website RAEE</li>
+              <li class="content__container__list__item">Usar flechas del teclado para interactuar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="info2" style="display: none;">
+      <h1 class="letra">Huellas Ecológicas</h1>
+      <div class="row links">
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#carbono" class="button-B1">Huella de Carbono</a>
+        </div>
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#ecologica" class="button-B1">Huella Ecológica</a>
+        </div>
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#hidrica" class="button-B1">Huella Hídrica</a>
+        </div>
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#digital" class="button-B1">Huella Digital</a>
+        </div>
+      </div>
+    </div>
+    <div id="info3" style="display: none;">
+      <h1 class="letra">Cultura Ambiental</h1>
+      <div class="row links">
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#cultura" class="button-B1">Cultura</a>
+        </div>
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#tipos" class="button-B1">Tipos de RAEE</a>
+        </div>
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#principio" class="button-B1">Principio EPR</a>
+        </div>
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#convenio" class="button-B1">Convenio de Basilea</a>
+        </div>
+      </div>
+    </div>
+    <div id="info4" style="display: none;">
+      <h1 class="letra">Conclusión</h1>
+      <a data-bs-toggle="modal" data-bs-target="#conclusion" class="button-B">Ver más</a>
+    </div>
+
+    <div class="content">
+      <p>Puedes presionar las teclas <kbd>▲</kbd> <kbd>▼</kbd> en tú teclado para navegar en la página. Tambien con el
+        scroll del mouse.</p>
+      <p><a target="_blank">Grupo 11</a> // 
+    </div>
+    <div class="buttons">
+      <button class="next" onclick="go(-1)"></button>
+      <button class="prev" onclick="go(1)"></button>
+    </div>
+  </div>
+  <!-- partial -->
+  <!-- Modal -->
+  <div class="modal fade" id="carbono" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title" id="exampleModalLabel">Huella de Carbono</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Carbon_footprint_representation.jpg/225px-Carbon_footprint_representation.jpg"
+            alt="">
+          <h3>¿Qué es la Huella de Carbono?</h3>
+          <p> Es un indicador ambiental que pretende reflejar
+            "la totalidad de gases de efecto invernadero (GEI) emitidos
+            por efecto directo o indirecto de un individuo, organización,
+            evento o producto". Tal impacto ambiental es medido llevando a
+            cabo un inventario de emisiones de GEI o un análisis de ciclo de
+            vida según la tipología de huella, siguiendo normativas internacionales
+            reconocidas, tales como ISO 2007. , El ISO 14069, ISO 14067, PAS 2050 o GHG
+            Protocol entre otras. La huella de carbono se mide en masa de CO₂ equivalente.
+            Una vez conocido el tamaño y la huella, es posible implementar una estrategia
+            de reducción o compensación , públicos o privados.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://huelladeciudades.com/AppHCCali/main.html#calcu" class="btn btn-warning">Calcular mi huella de
+            carbono</a>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="ecologica" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title" id="exampleModalLabel">Huella Ecológica</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="https://www.renovablesverdes.com/wp-content/uploads/2017/11/Huella-ecol%C3%B3gica-830x724.jpg"
+            alt="" height="200px">
+          <h3>¿Qué es la Huella Ecológica?</h3>
+          <p class="justify">Analiza los patrones de consumo de recursos y la producción de desechos de una
+            población determinada; ambos se expresan en áreas biológicamente productivas necesarias
+            para mantener tales servicios.
+            <br>
+            La huella muestra el cálculo de recursos específicos y
+            suma los efectos por la falta de recursos. Es una herramienta que ayuda a analizar la
+            demanda de naturaleza por parte de la humanidad.
+            <br>
+            Mide la superficie necesaria (calculada en hectáreas) para producir los recursos
+            consumidos por un ciudadano, una actividad, país, ciudad o región, etc, así como la
+            necesaria para absorber los residuos que genera, independientemente de donde estén
+            localizadas estas áreas.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="http://www.tuhuellaecologica.org" class="btn btn-warning">Calcular mi huella ecológica</a>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="hidrica" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title" id="exampleModalLabel">Huella Hídrica</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img
+            src="https://www.iagua.es/sites/default/files/styles/thumbnail-630x345/public/huella-hidrica-aquafides.jpg?itok=9GLhv5wh"
+            alt="" height="200px">
+          <h3>¿Qué es la Huella Hídrica?</h3>
+          <p class="justify">Es un indicador del uso de agua dulce que hace referencia tanto al
+            uso directo del agua de un consumidor o productor, como a su uso indirecto. La huella
+            hídrica puede considerarse como un indicador integral de la apropiación de los recursos
+            de agua dulce, ya que se utiliza para medir el volumen total de agua dulce usado para
+            producir los bienes y servicios producidos por una empresa, o consumidos por un individuo
+            o comunidad.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://huelladeciudades.com/AppHHCali/main.html#calcu" class="btn btn-primary">Calcular mi huella
+            hídrica</a>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="digital" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title" id="exampleModalLabel">Huella Digital</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="https://cdn2.hubspot.net/hubfs/5899204/huella-digital.jpg" alt="" height="200px">
+          <h3>¿Qué es la Huella Digital?</h3>
+          <p class="justify">Esta se define como el conjunto de actividades digitales que un usuario
+            lleva a cabo en internet y que además son rastreables. Es información que se recoge de
+            forma pasiva (mediante ‘cookies’ en las páginas web que navegamos) y activa (la
+            publicación de un ‘post’ en una red social). Se almacena en servidores, emplazados
+            generalmente en grandes centros de datos.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="cultura" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <h3>Cultura ambiental</h3>
+          <p class="justify">La cultura ambiental debe formar y desarrollar en los niños
+            comportamientos en función de cuidar su entorno y los recursos de la naturaleza.
+            En sí, es educar en valores ambientales y actitudes en favor del medio ambiente para
+            una mejor calidad de vida de las sociedades. Es lograr el conocimiento del ambiente para
+            un equilibrio entre el hombre y la naturaleza.
+            <br>
+            Es importante construir una sociedad con cultura ambiental para formar un
+            ciudadano comprometido y respetuoso con el medio ambiente, sensibilizado con la
+            situación ambiental, conocedor de los aspectos básicos con el medio que lo rodea,
+            ejemplo para los demás con buenos hábitos ambientales y protagonista en la resolución
+            de problemas ambientales.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/NYijS2PP8JA" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="tipos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title" id="exampleModalLabel">Tipos de RAEE - División en fracciones</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center container">
+          <div class="row" id="section1">
+
+            <h2 class="py-2">Primera Division</h2>
+            <div class="col-md-4 col-sm-12">
+              <img
+                src="img/iconos/1.png"
+                alt="">
+              <h5>FR1 – Aparatos de intercambio de temperatura</h5>
+              <p class="justify">Frigoríficos, congeladores, aparatos que suministran automáticamente
+                productos fríos, aparatos de aire acondicionado, equipos de deshumidificación,
+                bombas de calor, radiadores de aceite y otros.</p>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <img src="img/iconos/2.png" alt="">
+              <h5>FR2 – Monitores y pantallas</h5>
+              <p class="justify">Pantallas, televisores, marcos digitales para fotos
+                con tecnología LCD, monitores, ordenadores portátiles.</p>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <img src="img/iconos/3.png" alt="">
+              <h5>FR3 – Lámparas</h5>
+              <p class="justify">Lámparas fluorescentes rectas, lámparas fluorescentes compactas,
+                lámparas fluorescentes, lámparas de descarga de alta intensidad, incluidas las
+                lámparas de sodio de presión y las lámparas de haluros metálicos.</p>
+            </div>
+
+          </div>
+
+          <div class="row" id="section2" style="display:none;">
+
+            <h2 class="py-2">Segunda Division</h2>
+            <div class="col-md-4 col-sm-12">
+              <img src="img/iconos/4.png" alt="">
+              <h5>FR4 – Grandes aparatos (>50cm)</h5>
+              <p class="justify">Lavadoras, secadoras, lavavajillas,cocinas y
+                hornos eléctricos, hornillos eléctricos, placas de calor eléctricas, luminarias;
+                aparatos de reproducción de sonido o imagen, equipos de música.</p>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <img src="img/iconos/5.png" alt="">
+              <h5>FR5 – Pequeños aparatos (<50cm) </h5>
+                  <p class="justify">Aspiradoras, limpiamoquetas, máquinas de coser, luminarias, hornos
+                    microondas, aparatos de ventilación, planchas, tostadoras, cuchillos eléctricos,
+                    hervidores eléctricos, relojes, maquinillas de afeitar eléctricas, básculas, aparatos
+                    para el cuidado del pelo y el cuerpo, calculadoras, aparatos de radio, videocámaras,
+                    aparatos de grabación de vídeo.</p>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <img src="img/iconos/6.png" alt="">
+              <h5>FR6 – Aparatos informáticos y de telecomunicaciones con componentes peligrosos</h5>
+              <p class="justify">Teléfonos móviles, GPS, calculadoras de bolsillo, ordenadores
+                personales, impresoras, teléfonos, cartuchos de impresión y tóner con partes
+                eléctricas.</p>
+            </div>
+
+          </div>
+
+
+          <div class="row" id="section3" style="display: none;">
+
+            <h2 class="py-2">Tercera Division</h2>
+            <div class="col-md-12 col-sm-12">
+              <img src="img/iconos/7.png" alt="">
+              <h5>FR7 – Paneles fotovoltaicos</h5>
+              <p class="justify">Según se establece en el anexo III del real decreto, la Directiva
+                de 2012 reduce estas categorías a 6 pero se ha considerado adecuado separar los paneles
+                fotovoltaicos en una nueva categoría dada la singularidad de este tipo de aparatos, de
+                larga vida media y perfil profesional para que no distorsione las cuotas y objetivos
+                de recogida anuales del resto de aparatos eléctricos con características más similares.</p>
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button id="salirT" type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+            style="display: none;">Salir</button>
+          <button type="button" class="btn btn-success" id="siguienteT">Siguiente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="principio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title" id="exampleModalLabel">Objetivos principales del principio EPR</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+
+          <div class="row">
+
+            <h2 class="py-2">Objetivos principales</h2>
+            <div class="col-md-4 col-sm-12">
+              <img src="img/1.png" alt="" width="200">
+              <h5>Objetivo 1</h5>
+              <p class="justify">Los fabricantes serán incentivados para mejorar el
+                diseño ambiental de sus productos y el desempeño
+                ambiental del suministro de dichos productos.
+              </p>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <img src="img/2.png" alt="" width="200">
+              <h5>Objetivo 2</h5>
+              <p class="justify">Los productos deben alcanzar una alta tasa de
+                utilización.</p>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <img src="img/3.png" alt="" width="200">
+              <h5>Objetivo 3</h5>
+              <p class="justify">Los materiales deben conservarse mediante una
+                recolección, tratamiento, reutilización y reciclaje
+                eficaces y ecológicos</p>
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="convenio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title" id="exampleModalLabel">Convenio de Basilea</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <h2>Convención de Basilea</h2>
+          <p class="justify">
+            Control de los movimientos transfronterizos de los desechos peligrosos y su eliminación es el tratado
+            multilateral de medio ambiente que se ocupa más exhaustivamente de los residuos peligrosos y otros desechos.
+            <br>
+            Cuenta con 170 países miembros (Partes) y su objetivo es proteger el medio ambiente y la salud humana contra
+            los efectos nocivos derivados de la generación, el manejo, los movimientos trasfronterizos y la eliminación
+            de los desechos peligrosos y otros desechos.
+          </p>
+          <img src="https://0901.static.prezi.com/preview/v2/ab3lvojsjqijscmj6whqpwj7bt6jc3sachvcdoaizecfr3dnitcq_3_0.png" alt="" width="400">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="conclusion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title" id="exampleModalLabel">Conclusión</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <h2 class="letras">
+            Pensando en un mundo mejor
+            <div class="mask">
+              <span data-show>Mas verde</span>
+              <span>Menos Contaminación</span>
+              <span>Mejor calidad de vida</span>
+            </div>
+          </h2>
+
+          <p class="justify container">
+            Particularmente no tengo nada en contra de la tecnología,
+            por el contrario, soy un seguidor de esta y me gusta actualizarme en cuanto a
+            celulares, computadores y todas aquellas aplicaciones que me ayudan a realizar mis
+            labores profesionales y personales. Pero lo que trataré en este animación mostrando
+            las distintas huellas y la cultura ambiental para que a su vez cree una
+            sensibilización en el cuidado del medio ambiente y las consecuencias que deja la
+            sociedad del consumo frente a la tecnología.
+            El motivo de esta animación es para que todas las personas seamos responsables
+            del ciclo de vida de los residuos electrónicos dándoles el uso adecuado.
+            Si vamos a adquirir un nuevo aparato, aseguremos que el viejo cumpla su vida
+            útil regalándolo o enviándolo a recicladores de material electrónico. De esta manera
+            generamos esta cultura en la familia, en el trabajo y en los lugares donde nos encontremos
+            para brindar una vida saludable a nuestras futuras generaciones.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
+
+
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
